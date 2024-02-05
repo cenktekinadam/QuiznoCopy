@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="sinir">
+        <button id="yonlendirButton">Yönlendirme Butonu</button>
+    </div>
+    <script>
+        // Sayfa yüklendiğinde başlat
+        const xyz = document.querySelector('.sinir');
+
+        xyz.addEventListener("mouseleave", run);
+        function run() {
+            console.log("Run Çalıştı");
+
+        }

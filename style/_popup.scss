@@ -1,0 +1,86 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(.9);
+    width: 720px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3 ease;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, -50%)scale(1);
+
+    }
+
+    h2 {
+        font-size: 50px;
+        color: #00213A;
+
+    }
+
+    &__info {
+        display: inline-block;
+        font-size: 16px;
+        color: #333;
+        font-weight: 500;
+        margin: 4px 0;
+        text-transform: capitalize;
+
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        border-top: 1px solid #999;
+        padding: 15px 0 7px;
+
+        .info-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 45px;
+            background: $but-color;
+            border: 2px solid $but-color;
+            outline: none;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            transition: .5s;
+
+            &:nth-child(1) {
+                background-color: transparent;
+                color: #003D69;
+
+                &:hover {
+                    background-color: $but-color;
+                    color: #fff;
+                }
+            }
+
+            &:nth-child(2) {
+                background-color: $but-color;
+                color: #fff;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #003d6994;
+                }
+            }
+
+        }
+    }
+}
+
+//active
